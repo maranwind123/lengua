@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - Lengua y Literatura</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Iconos de Lucide (usaremos uno de libro y uno de busto) -->
+     <style>
+        *{
+            margin: 0;
+            padding:0;
+
+        }
+     </style>
+    <script type="module">
+        import { createIcons, BookOpen, UserSquare } from 'https://unpkg.com/lucide@latest';
+        createIcons({ icons: { BookOpen, UserSquare } });
+    </script>
+    <style>
+        /* Fuente Inter como predeterminada, limpia y moderna */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Fondo gris muy claro */
+        }
+        /* Estilo para el botón principal */
+        .btn-primary {
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center">
+    
+    <nav class="w-full bg-green-600 text-white mb-10 h-20">
+        
+
+        
+    </nav>
+    <!-- Contenedor Principal de la Presentación -->
+    <div class="w-full max-w-4xl bg-white rounded-xl shadow-2xl p-8 md:p-10 text-center border-t-8 border-green-600 m-2">
+
+        <!-- Título y Subtítulos (BIENVENIDOS / LENGUA Y LITERATURA / 4to AÑO) -->
+        <h1 class="text-xs font-bold uppercase tracking-widest text-green-600 mb-2">
+            BIENVENIDOS
+        </h1>
+        
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+            Lengua y Literatura
+        </h2>
+       
+        <p class="text-lg text-gray-500 mt-1 mb-6">
+            4to Año
+        </p>
+
+        <!-- Sección Visual (Contenedor del Boceto) -->
+        <div class="bg-green-50 rounded-lg p-6 md:p-8 flex items-center justify-center space-x-6 mb-8 shadow-inner">
+            <!-- Icono de Libro -->
+            <div class="flex flex-col items-center justify-center">
+                <i data-lucide="book-open" class="w-12 h-12 text-green-700"></i>
+                <span class="text-xs text-green-600 mt-1 font-semibold">Teoría</span>
+            </div>
+
+            <!-- Divisor/Espacio -->
+            <div class="w-px h-16 bg-green-200"></div>
+
+            <!-- Icono de Busto (Representación de Arte/Historia) -->
+            <div class="flex flex-col items-center justify-center">
+                <i data-lucide="user-square" class="w-12 h-12 text-green-700"></i>
+                <span class="text-xs text-green-600 mt-1 font-semibold">Análisis</span>
+            </div>
+        </div>
+
+        <!-- Título de la Obra (EL CUENTO DEL HIJO) -->
+        <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-6">
+            El Cuento del Hijo.
+        </h3>
+
+        <!-- Botones de Acción (INGRESAR y SIGUIENTE) -->
+        <div class="flex flex-col space-y-3">
+            
+            <!-- Botón Principal: INGRESAR -->
+            <a href="#" class="btn-primary bg-green-600 text-white py-3 px-8 rounded-full font-bold uppercase text-sm hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300">
+                INGRESAR
+            </a>
+
+            <!-- Botón Secundario: SIGUIENTE -->
+            <a href="#" class="text-sm font-medium text-gray-500 hover:text-green-600 transition duration-150 ease-in-out">
+                Siguiente →
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Contenedor Principal de la Presentación -->
+    <div class="w-full max-w-4xl bg-white rounded-xl shadow-2xl p-8 md:p-10 border-t-8 border-green-600 m-2">
+
+        <!-- Título y Subtítulos (BIENVENIDOS / LENGUA Y LITERATURA / 4to AÑO) -->
+        <h1 class="text-3xl font-bold uppercase tracking-widest text-green-600 mb-2 text-center">
+            EL CUENTO DEL HIJO
+        </h1>
+        
+        <h2 class="text-XS font-extrabold text-gray-800 leading-tight text-center mb-5">
+            AUTOR: PEDRO EMILIO COLL
+        </h2>
+       
+        <p class="text-lg text-gray-500 mt-1 mb-6 text-justify">
+            "El Cuento del Hijo" es una narración venezolana escrita por Pedro Emilio Coll, un destacado escritor, periodista y diplomático del siglo XIX y principios del siglo XX, reconocido por su aporte al modernismo en Venezuela.
+            <br><br>
+            La historia relata la vida de Higinia, una mujer anciana del pueblo que sufre un dolor inexplicable. Siguiendo el consejo de su comadre, hace una promesa a San Miguel buscando alivio, y experimenta una curación milagrosa.
+            <br><br>
+            Este cuento refleja la profunda influencia de la fe y las creencias religiosas en la vida cotidiana de la gente en un contexto rural venezolano, mostrando también las dinámicas sociales y culturales típicas del país.
+        </p>
+
+
+    </div>
+
+
+    <footer class="w-full bg-gray-800 text-white mt-12 h-40">
+    
+    
+    </footer>
+    
+
+</body>
+</html>
